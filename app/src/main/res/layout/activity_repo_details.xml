@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RepoDetailsActivity">
+
+    <TextView
+        android:id="@+id/owner_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/owner_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="15sp"
+        android:text="@string/description_heading"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/owner_name"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_heading" />
+    
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/yellow_circle"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/language"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/language"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toEndOf="@+id/circle"
+        app:layout_constraintTop_toTopOf="@id/circle"
+        app:layout_constraintBottom_toBottomOf="@id/circle"/>
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/star"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/star_count"
+        app:layout_constraintTop_toBottomOf="@+id/circle" />
+
+    <TextView
+        android:id="@+id/star_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/star_count"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toEndOf="@+id/star"
+        app:layout_constraintTop_toTopOf="@id/star"
+        app:layout_constraintBottom_toBottomOf="@id/star"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
