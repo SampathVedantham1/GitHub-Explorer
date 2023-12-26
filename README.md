@@ -26,7 +26,6 @@
     - [Settings screen](https://drive.google.com/file/d/1g-VAVZsjclfiBodyIIGlS3pFOg6TnYvT/view?usp=sharing)
 - Video : 
     - [Video reference](https://drive.google.com/file/d/1uX2Sj_TvmzdYcroQ1q1XPN2FRH-6R7kM/view?usp=sharing)
-    - [Automated deploy using CI/CD](https://drive.google.com/file/d/1oWaCIEtb2PO8-RiOhC8ZtyIHTkhuqJKM/view?usp=drive_link)
 
 # Projuct Structure
 - At outer level, it consists of three modules :
